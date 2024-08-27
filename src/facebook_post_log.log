@@ -1062,3 +1062,13 @@ FROM categoria
 2024-08-27 16:07:07,109 - INFO - SELECT grupos_facebook.id AS grupos_facebook_id, grupos_facebook.link_grupo AS grupos_facebook_link_grupo, grupos_facebook.data_cadastro AS grupos_facebook_data_cadastro, grupos_facebook.categoria_id AS grupos_facebook_categoria_id 
 FROM grupos_facebook
 2024-08-27 16:07:07,110 - INFO - [generated in 0.00073s] ()
+2024-08-27 16:18:16,346 - INFO - BEGIN (implicit)
+2024-08-27 16:18:16,350 - INFO - SELECT categoria.id AS categoria_id, categoria.nome AS categoria_nome 
+FROM categoria
+2024-08-27 16:18:16,351 - INFO - [generated in 0.00100s] ()
+2024-08-27 16:18:16,358 - INFO - SELECT categoria.id AS categoria_id, categoria.nome AS categoria_nome 
+FROM categoria
+2024-08-27 16:18:16,367 - INFO - [cached since 0.01705s ago] ()
+2024-08-27 16:18:16,379 - INFO - SELECT grupos_facebook.id AS grupos_facebook_id, grupos_facebook.link_grupo AS grupos_facebook_link_grupo, grupos_facebook.data_cadastro AS grupos_facebook_data_cadastro, grupos_facebook.categoria_id AS grupos_facebook_categoria_id 
+FROM grupos_facebook
+2024-08-27 16:18:16,380 - INFO - [generated in 0.00063s] ()
