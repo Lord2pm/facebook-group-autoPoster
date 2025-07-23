@@ -5,7 +5,7 @@ from typing import NoReturn
 from time import sleep
 
 from scripts.config import load_driver_config
-from models.models import LoginData, GruposFacebook, session
+from models.models import LoginData, session
 from utils.manage_logs import log_post_shared, log_post_shared_error
 
 
