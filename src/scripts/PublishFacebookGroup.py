@@ -33,7 +33,8 @@ class PublishFacebookGroup:
             ).click()
             sleep(60)
             return True
-        except:
+        except Exception as e:
+            print(e)
             return False
 
     def post_in_group(self, post_link) -> NoReturn:
@@ -56,9 +57,9 @@ class PublishFacebookGroup:
                 ).click()
                 log_post_shared(facebook_group.link_grupo, post_link)
                 sleep(30)
-            except:
+            except Exception as e:
+                print(e)
                 log_post_shared_error(facebook_group.link_grupo, post_link)
-                ...
 
     def start(self, post_link: str) -> bool:
         self.driver.get(self.facebook_url)
